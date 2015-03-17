@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: abbrv.bst
+Database file #1: bibliography.bib.bib
+Name 1 in "Wikipedia," has a comma at the end for entry crypto_wikipedia_2015
+while executing---line 1049 of file abbrv.bst
+Name 1 in "Wikipedia," has a comma at the end for entry china_wikipedia_2015
+while executing---line 1049 of file abbrv.bst
+Name 1 in "Wikipedia," has a comma at the end for entry china_wikipedia_2015
+while executing---line 1090 of file abbrv.bst
+Name 1 in "Wikipedia," has a comma at the end for entry crypto_wikipedia_2015
+while executing---line 1090 of file abbrv.bst
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            581 strings with 6417 characters,
+and the built_in function-call counts, 5393 in all, are:
+= -- 528
+> -- 248
+< -- 5
++ -- 99
+- -- 82
+* -- 320
+:= -- 867
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 89
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 220
+empty$ -- 452
+format.name$ -- 82
+if$ -- 1172
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 12
+newline$ -- 79
+num.names$ -- 32
+pop$ -- 131
+preamble$ -- 1
+purify$ -- 73
+quote$ -- 0
+skip$ -- 164
+stack$ -- 0
+substring$ -- 275
+swap$ -- 62
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 62
+warning$ -- 0
+while$ -- 51
+width$ -- 18
+write$ -- 167
+(There were 4 error messages)
