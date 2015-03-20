@@ -12,7 +12,7 @@ for what you submit for the course.
 * What's an "average Tor user"?
 * What have bug reports from users (regardless of their biased nature)
 revealed?  What about "anecdotes"?  What's "surprising" about research
-on attacks on Tor users?  What did Le Blond find?  (note: not "Blond")
+on attacks on Tor users?  What did Le Blond find?
 * "have the potential to greatly affect user behavior" - tell us how
 * "have a history of failing to inform users" - provide citation.  In addition,
 is it a failure to *inform* users, or a failure to *effectively* inform
@@ -35,3 +35,6 @@ follow.  It could be popular even though not "very usable".
 * Work by Norcie investigates "stop points" - what were these?  What's
 the associated analysis/interpretation?
 * Citation [13] doesn't have a venue, and has peculiar authorship.
+
+Done:
+* (note: not "Blond")
