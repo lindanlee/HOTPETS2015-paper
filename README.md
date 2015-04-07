@@ -1,7 +1,7 @@
 # Investigating the Usability of Tor Browser
 ## David Fifield, Linda Lee, Serge Egelman, David Wagner
 
-======
+------
 
 #### What this is for:
 ###1) CS261 project: http://www.icir.org/vern/cs261n/project.html 
