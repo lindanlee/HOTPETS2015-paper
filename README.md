@@ -10,7 +10,7 @@
 * 2-page experiment overview: Friday April 24th. 
 
 #### Experiments: 
-- ~~ UX Sprint to test download and general understanding of Tor ~~
+- ~~UX Sprint to test download and general understanding of Tor~~
 - Large-scale study of testing Tor's usability for censorship circumvention (*for PETS and CS261n*)
 - Design and evaluation of improvements to Tor browser
 
@@ -18,9 +18,9 @@
 * ALL: Review/submit IRB protocol
 
 * David: <Use this if you want.>
-* David: ~~ <Crossing things off helps me. Plus we can tell each other what we are up to.>
+* David: ~~<Crossing things off helps me. Plus we can tell each other what we are up to.>~~
 
-* Linda: ~~ Finish necessary forms (recruitment, consent, etc.) for IRB ~~
+* Linda: ~~Finish necessary forms (recruitment, consent, etc.) for IRB~~
 * Linda: Outline the CS261n paper.
 * Linda: Outline the PETS2015 paper. 
 
