@@ -2,11 +2,11 @@
 ## David Fifield, Linda Lee, Serge Egelman, David Wagner
 
 #### What this is for:
-###1) CS261 project: http://www.icir.org/vern/cs261n/project.html 
+#####1) CS261 project: http://www.icir.org/vern/cs261n/project.html 
 * Status Report: Friday Apr 10.
 * Final Paper: Tuesday May 12, at 1PM. 
 
-###2) HOTPETS2015: https://www.petsymposium.org/2015/hotpets.php
+#####2) HOTPETS2015: https://www.petsymposium.org/2015/hotpets.php
 * 2-page experiment overview: Friday April 24th. 
 
 #### Experiments: 
