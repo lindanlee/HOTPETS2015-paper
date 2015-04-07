@@ -17,12 +17,15 @@
 #### TODOs: 
 * ALL: Review/submit IRB protocol
 
+
 * David: Use this if you want.
 * David: ~~Crossing things off helps me. Plus we can tell each other what we are up to.~~
+
 
 * Linda: ~~Finish necessary forms (recruitment, consent, etc.) for IRB~~
 * Linda: Outline the CS261n paper.
 * Linda: Outline the PETS2015 paper. 
+
 
 * Serge: <Serge TODOS here>
 
