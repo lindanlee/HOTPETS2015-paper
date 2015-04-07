@@ -1,0 +1,9 @@
+Corporate. All ports but 80/tcp, 443/tcp, and 53/udp are blocked.
+youtube.com, amazon.com, twitter.com, and torproject.org are blocked by
+DNS (maybe redirect to block page).
+
+Turkey. DNS poisoning on youtube.com, twitter.com, and torproject.org.
+
+China. DNS poisoning on google.com, youtube.com, twitter.com, bing.com,
+and torproject.org. IP blocking on twitter.com and torproject.org. Port
+443 on wikipedia.org blocked. Keyword filtering on wikipedia.org.
