@@ -14,18 +14,20 @@
 - Large-scale study of testing Tor's usability for censorship circumvention (*for PETS and CS261n*)
 - Design and evaluation of improvements to Tor browser
 
-#### TODOs: 
-* ALL: Review/submit IRB protocol
+#### General TODOs: 
+* Review/submit IRB protocol
+* Hack together PETS paper
+* Write CS261n paper
 
+##### David
+* Use this if you want.
+* ~~Crossing things off helps me. Plus we can tell each other what we are up to.~~
 
-* David: Use this if you want.
-* David: ~~Crossing things off helps me. Plus we can tell each other what we are up to.~~
+##### Linda
+* ~~Finish necessary forms (recruitment, consent, etc.) for IRB~~
+* Outline the CS261n paper.
+* Outline the PETS2015 paper. 
 
-
-* Linda: ~~Finish necessary forms (recruitment, consent, etc.) for IRB~~
-* Linda: Outline the CS261n paper.
-* Linda: Outline the PETS2015 paper. 
-
-
-* Serge: <Serge TODOS here>
+##### Serge 
+* <Serge TODOS here>
 
