@@ -1,12 +1,24 @@
 Notes for PETS paper: 
 
-Evaluation of censorship technologies: 
+1) A way to evaluate censorship circumvention technologies
+2) Analyze Tor with with respect to evaluation metrics
 
-* “goodput”: how much of the traffic is actually successful at circumventing censorship and gets through to the website. (MEASURE) 
+***Analyze the censorship circumvention tool orthogonal to security and anonymity guarantees. (if Tor is actually ONLY used for censorship circumvention, how good is it?)***
 
-* performance: what is the timescale at the response (MEASURE)
+eventual paper idea0: evaluation of censorship technologies?  << seems more intriguing. 
+eventual paper idea1: usable improvement testsing << I'm less enthusiastic about this. 
+
+==========================================
+
+Things to consider for idea 0: 
+
+* “goodput”: how much of the traffic is actually successful at circumventing censorship and gets through to the website. (MEASURE IN EXPERIMENT/might not be representative for actual country? should we measure with VPNs?) 
+
+* performance: what is the timescale at the response (DISCUSS/can't measure for country?)
 
 * usability: how easy is it for people to use? (EXPERIMENT) 
+
+* robustness: can work in many different countries, uses many different ways to circumvent (proxy, vpn, bridges, dns, etc.) (DISCUSS)
 
 * elicited response: how fast do the people who censor react to this? and what is the response? factors that matter include
 -if there are high profile people or incidents associated with the system
@@ -14,6 +26,13 @@ Evaluation of censorship technologies:
 -work ethics (do people take weekends off in the government? how much do people want to work on this? maybe the workers don’t care to do this, and work kind of slowly at it)
 -$$ 
 -logistics of deployment (do you need to deploy more hardware to actually make the censorship happen?)
--how to they monitor to detect the circumvention (DISCUSS) 
+-how to they monitor to detect the circumvention (DISCUSS)   
 
-* Analyze the censorship circumvention tool orthogonal to security and anonymity guarantees. (if Tor is actually ONLY used for censorship circumvention, how good is it?)  
+* other non-technical considerationw chich would matter: (price, support staff, pervasiveness, etc.)
+
+==========================================
+
+Things to consider for idea1: 
+
+*are there actual fundamental usability problems to uncover? 
+*how much work will this be? 
