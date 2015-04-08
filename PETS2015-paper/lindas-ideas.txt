@@ -1,10 +1,12 @@
 Notes for PETS paper: 
 
-Evaluation of censorship technologies : 
+Evaluation of censorship technologies: 
 
-* “goodput”: how much of the traffic is actually successful at circumventing censorship and gets through to the website. (also, ask, what % of the traffic is traffic which would have been censored? Maybe tor has 5% censored traffic, etc.) 
+* “goodput”: how much of the traffic is actually successful at circumventing censorship and gets through to the website. (MEASURE) 
 
-* performance: what is the timescale at the response 
+* performance: what is the timescale at the response (MEASURE)
+
+* usability: how easy is it for people to use? (EXPERIMENT) 
 
 * elicited response: how fast do the people who censor react to this? and what is the response? factors that matter include
 -if there are high profile people or incidents associated with the system
@@ -12,6 +14,6 @@ Evaluation of censorship technologies :
 -work ethics (do people take weekends off in the government? how much do people want to work on this? maybe the workers don’t care to do this, and work kind of slowly at it)
 -$$ 
 -logistics of deployment (do you need to deploy more hardware to actually make the censorship happen?)
--how to they monitor to detect the circumvention
+-how to they monitor to detect the circumvention (DISCUSS) 
 
 * Analyze the censorship circumvention tool orthogonal to security and anonymity guarantees. (if Tor is actually ONLY used for censorship circumvention, how good is it?)  
