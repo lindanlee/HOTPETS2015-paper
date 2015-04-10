@@ -45,15 +45,13 @@ assessing and improving the usability of Tor Browser.
 There have been been no major usability evaluations of
 Tor Browser since the introduction of the 4.0 series,
 which introduced radical UI changes.
-We will briefly describe the results of a completed study
-that examined downloading and installing the browser
-and using it for basic browsing tasks.
+We briefly describe the results of a completed study
+that examined the download, install, and 
+and basic browsing behaviors.
 This study uncovered a number of bugs and stopping points
 and has already effected concrete change in the browser.
-We will describe our plans for future studies aimed at
-isolating specific browser features in depth,
-with a detailed design of an experiment to evaluate
-Tor Browser as a tool for censorship circumvention.
+We will describe a future study aimed at
+evaluating Tor Browser as a tool for censorship circumvention, isolating specific browser features in depth in the process. 
 {\color {red}LL: I don't know how to say this, but I want the fact that we are evaluating it from a different standpoint --ie as a censorship circumvention tool, to stand out more. Also, we spend more abstract real estate talking about the first experiment rather than our design, which I think should be flipped. But for right now, I can't think of what exactly to fix so I'll look at this later.}
 We solicit feedback on our experimental design
 and the specific features of the browser that we are testing.
@@ -90,7 +88,7 @@ that are nevertheless inspired by reality.
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item{Corporate network.}
-A simulation of a corporate or educational firewall.
+A simulation of a enterprise or educational firewall.
 Blocks all services but HTTP, HTTPS, and DNS.
 Certain non-work-related domains, like youtube.com and torproject.org,
 are blocked by DNS and HTTP inspection.
@@ -113,16 +111,9 @@ Blocked requests fail silently (no block page).
 \end{itemize}
 
 \noindent {\bfseries List of Tasks} 
-We will divide our participants into treatments
-by censorship environment.
-All participants will be asked to complete the same
-list of tasks.
-We constructed the list by looking at some of the top
-Alexa sites and imagining what might be reasonable
-and relevant tasks for each
-(that do not require a participant to reveal private information
-like passwords).
-The tasks are not all intended to be challenging to complete.
+The lists of tasks were originally inspired by the top Alexa sites, which gave an idea of relevant and popular browsing behavior, then refined by ethical concerns, filtering out tasks which would require a participant to reveal private information. The resulting task list is one which we hope is both representative of how a user might browse the internet, but also give good coverage of sites which are censored today. 
+
+All participants will be asked to complete the same list of tasks, regardless of the censorship environment. Although every participant will attempt the same set of tasks, the difficulty of completing these tasks will vary on their chosen censorship environment. The tasks are not all intended to be challenging to complete. Some may not even require the use or Tor Browser, depending on the environment. 
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item Do a Google web search.
