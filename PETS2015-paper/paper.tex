@@ -77,6 +77,37 @@ Methodology of experiment.
 
 What we hope to get from this experiment
 
+We plan to simulate three censorship environments.
+They are informed by our experience with pluggable transports
+and knowledge of commonly seen censorship techniques.
+They are not meant perfectly to replicate the network environment
+in any particular country; rather, they are abstract simulations
+that are nevertheless inspired by reality.
+
+\begin{itemize}
+\item{Corporate network.}
+A simulation of a corporate or educational firewall.
+Blocks all services but HTTP, HTTPS, and DNS.
+Certain non-work-related domains, like youtube.com and torproject.org,
+are blocked by DNS and HTTP inspection.
+Blocked requests are redirected to a block page.
+\item{DNS-only censor.}
+This censor injects false replies to DNS queries
+for forbidden domain names (DNS poisoning),
+but does not do deep packet inspection on TCP streams.
+Unlike the corporate censor, this censor allows protocols
+other than HTTP, HTTPS, and DNS.
+\item{Comprehensive censor.}
+Employs a variety of techniques, depending on the target.
+May do DNS poisoning, IP blocking, and inspection of TCP streams
+(examining the URL of HTTP requests, for example).
+Some domains may be blocked by DNS and deep packet inspection;
+others may additionally be blocked by IP address.
+Tor relays are blocked by IP address.
+Some domains, like wikipedia.org, may allow HTTP but not HTTPS.
+Blocked requests fail silently (no block page).
+\end{itemize}
+
 \section{What we want feedback on}
 
 \noindent {\bfseries 1. testing the pluggable transports} blah explain ourselves. 
