@@ -30,15 +30,10 @@
    \affaddr{\textsuperscript{1}University of California, Berkeley, \{fifield,lnl,egelman,daw\}@cs.berkeley.edu}, \\
    \affaddr{\textsuperscript{2}International Computer Science Institute, egelman@icsi.berkeley.edu}\\
 }
-
-%\numberofauthors{1}
-%\author{
-% \alignauthor Anonymous\\
-%   \vspace{0.5em}
-%   \affaddr{Some Place}
-%}
 \maketitle
 
+% is the abstract missing some oomph? 
+% I don't know how much the storyline is showing through.. or what we are testing. 
 \begin{abstract}
 Our talk will be about ongoing experiments aimed at
 assessing and improving the usability of Tor Browser.
@@ -52,12 +47,11 @@ This study uncovered a number of bugs and stopping points
 and has already effected concrete change in the browser.
 We will describe a future study aimed at
 evaluating Tor Browser as a tool for censorship circumvention, isolating specific browser features in depth in the process. 
-{\color {red}LL: I don't know how to say this, but I want the fact that we are evaluating it from a different standpoint --ie as a censorship circumvention tool, to stand out more. Also, we spend more abstract real estate talking about the first experiment rather than our design, which I think should be flipped. But for right now, I can't think of what exactly to fix so I'll look at this later.}
 We solicit feedback on our experimental design
 and the specific features of the browser that we are testing.
 \end{abstract}
 
-\keywords{Privacy, Security, User Studies, Anonymity, Tor} % NOT required for Proceedings
+\keywords{Privacy, Security, User Studies, Anonymity, Tor}
 
 \section{What we already did/background stuff}
 Tor is the most widely used anonymity browser today. However, there are complaints that Tor is not usable. Norcie~\cite{norcie2012eliminating} did an experiment which identified stopping points in Tor browser, finding out when people would get frustrated with Tor so much they would stop using it. But what about the people who are using Tor? what usability issues would thee be if people were not stopped? 
@@ -125,15 +119,15 @@ All participants will be asked to complete the same list of tasks, regardless of
 \item Find directions on Bing Maps.
 \end{itemize}
 
+%frame this in the sense that we are saying, ``we have this figued out. we want feedback on other things.''
 \noindent {\bfseries Experiment Execution Details} 
-{\color {red} this subsection might be too much}We plan to recruit at least 120 (to 200?) users for the purpose of this study. This study will be performed at the Experimental Social Science Laboratory (Xlab) at the University of California, Berkeley. The laboratory space consists of 36 laptops with cubicle walls separating each laptop. We used individual host firewalls to simulate the censorship environments. We plan to write a browser extension to measure when users visit what websites in order to log which websites they were successfully able to visit. The total length of the experiment should be less than an hour. Participants will be compensated \$30 for their time, which is more to cover minimum wage and transportation costs.  \\
+We plan to recruit at least 120 (to 200?) users for the purpose of this study. This study will be performed at the Experimental Social Science Laboratory (Xlab) at the University of California, Berkeley. The laboratory space consists of 36 laptops with cubicle walls separating each laptop. We used individual host firewalls to simulate the censorship environments. We plan to write a browser extension to measure when users visit what websites in order to log which websites they were successfully able to visit. The total length of the experiment should be less than an hour. Participants will be compensated \$30 for their time, which is more to cover minimum wage and transportation costs.  \\
 
 \section{What we want feedback on}
 
 During the question-and-answer session,
 we will be especially interested in soliciting feedback
 on these topics:
-{\color {red} I feel like I am abusing bold text in this paper..}
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item {\bfseries Targeting specific pluggable transports.}
