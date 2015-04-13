@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title{Assessing Usability of Tor Browser}
+\title{Tor's Usability for Censorship Circumvention}
 \numberofauthors{1}
 \author{
  \alignauthor David Fifield\textsuperscript{1} and Linda N. Lee\textsuperscript{1}, Serge Egelman\textsuperscript{1,2}, David Wagner\textsuperscript{1}\\
@@ -35,39 +35,63 @@
 % is the abstract missing some oomph? 
 % I don't know how much the storyline is showing through.. or what we are testing. 
 \begin{abstract}
-Our talk will be about ongoing experiments aimed at
-assessing and improving the usability of Tor Browser.
+
+Tor has grown beyond its original purpose and has become an important Internet circumvention tool.
+Our work is the first to analyze Tor as a censorship circumvention tool, rather than an anonymous browsing tool. 
+We specifically examine one  essential facet for a good censorship circumvention tool: its usability. 
+Our analysis the configuration dialog of the browser has new significance because of the new ways Tor is used.
+Our talk will describe a future study aimed at evaluating Tor Browser as a tool for censorship circumvention,
+ isolating specific browser features in depth in the process. 
+To this end, we will conduct a large-scale user study examining hundreds of users 
+on how they navigate Tor's configuration wizard to complete seven browsing tasks in three different adversarial settings. 
+We solicit feedback in order to improve the representation of our study and its design.
+\end{abstract}
+
+\keywords{Censorship, Security, User Studies, Anonymity, Tor}
+
+\section{Tor's Usability}
+%Idea is to cover background on Tor's usability as an anonymity tool, and then highlight the shift in focus to evaluating Tor's usability as a censorship circumvention tool. 
+
+Tor is the most widely used anonymity tool today. However, there are complaints that Tor is not usable. Norcie~\cite{norcie2012eliminating} did an experiment which identified stopping points in Tor browser, 
+finding out when people would get frustrated with Tor so much they would stop using it. 
+%redo this next couple sentences into something better
+But what about the people who are using Tor? what usability issues would thee be if people were not stopped? 
+To our knowledge, that has been the only user study of Tor. 
+Since then, Tor has had a lot of updates. 
+Additionally, there were a lot of features that were untested. 
 There have been been no major usability evaluations of
 Tor Browser since the introduction of the 4.0 series,
 which introduced radical UI changes.
+
 We briefly describe the results of a completed study
 that examined the download and installation processes, 
 as well as basic browsing behaviors.
 This study uncovered a number of bugs and stopping points
 which has already effected concrete change in the browser.
-We will describe a future study aimed at
-evaluating Tor Browser as a tool for censorship circumvention, isolating specific browser features in depth in the process. 
-To this end, we will conduct a large-scale user study examining hundreds of users on how they navigate Tor's configuration wizard to complete seven browsing tasks in three different adversarial settings. 
-We solicit feedback in order to improve the representation
-of our study and its design.
-\end{abstract}
 
-\keywords{Censorship, Security, User Studies, Anonymity, Tor}
-
-\section{Inspiration}
-Tor is the most widely used anonymity browser today. However, there are complaints that Tor is not usable. Norcie~\cite{norcie2012eliminating} did an experiment which identified stopping points in Tor browser, finding out when people would get frustrated with Tor so much they would stop using it. But what about the people who are using Tor? what usability issues would thee be if people were not stopped? 
-
-To our knowledge, that has been the only user study of Tor. Since then, Tor has had a lot of updates. Additionally, there were a lot of features that were untested. We ran a small pilot study of five journalists which involved a cognitive walk through in which participants explained the motivation for their actions and any confusion that they had during the process. We did this to find new stopping points, and sources of confusion. 
-But in the process, we were also able to observer how users would download Tor, if they could understand the address bar/menu, how well they were able to complete basic tasks (searching, setting new circuits, etc), and generally if they had any usability complaints about the browser. 
+We ran a small pilot study of five journalists which involved a cognitive walk through in which 
+participants explained the motivation for their actions and any confusion that they had during the process. 
+We did this to find new stopping points, and sources of confusion. 
+But in the process, we were also able to observe how users would download Tor, 
+if they could understand the address bar/menu, how well they were able to complete basic tasks
+(searching, setting new circuits, etc), and generally if they had any usability complaints about the browser. 
 
 We recruited five journalists from Berkeley by reaching out to journalist contacts. 
 %Demographics here. 
 During the study, we recorded their screen, what they were saying out loud in their cognitive walk through, and also cast their screen into a room with Tor developers. The participants also took an exit survey which estimated their familiarity with technology and security. On average, participants took 26 minutes to complete the study ($\sigma$ = 7 min).  The result was that people did have difficulty with downloading the Tor browser because of the gatekeeper icon, did not understand what many of the many options meant, and were confused about why certain things were happening. 
 
-\section{Contextual Evaluation} 
-After our first experiment, it was clear to us that so many of the features had been left uninvestigated---such as advanced web browsing tasks, the configuration menu, automatic updates, and identity and cookie management. But rather than selecting the features to study in isolation, we decided to focus on an important use case of Tor browser, censorship circumvention. To our knowledge, this is the first user study investigating the usability of Tor as a censorship circumvention tool, rather than an anonymity tool. 
+After our first  usability evaluation of Tor, it was clear to us that so many of the features had been left unevaluated---such as advanced web browsing tasks, the configuration menu, automatic updates, and identity and cookie management. 
+%say something about how we resolved this somehow, and how it doesn't necessarily need our attention now
+We found that the most effective way to resolve the problems encountered was more user guidance and interface remodeling rather than continued user observations.
+%emphasize how we are aiming for new research, not new test cases for debugging an interface
+Rather than selecting the features to study in isolation, 
+we decided to focus on an important use case of Tor browser, censorship circumvention. 
+%say something along the lines of ``x people are using it for this, and there's no work on it,'' 
+%if there are stats on this type of thing.
+To our knowledge, this is the first user study investigating the usability of Tor as a 
+censorship circumvention tool, rather than an anonymity tool. 
 
-Tor has grown beyond its original purpose and has become an important Internet circumvention tool. Our work is the first to analyze Tor as a censorship circumvention tool, rather than an anonymous browsing tool. We specifically examine one  essential facet for a good censorship circumvention tool: its usability. Our analysis the configuration dialog of the browser has new significance because of the new ways Tor is used.
+
 
 \section{Design}
 \noindent {\bfseries Overview}
@@ -126,7 +150,7 @@ All participants will be asked to complete the same list of tasks, regardless of
 
 %frame this in the sense that we are saying, ``we have this figued out. we want feedback on other things.''
 \noindent {\bfseries Experiment Execution Details} 
-We plan to recruit at least 120 (to 200?) users for the purpose of this study. This makes it largest user study to date on Tor (check this) This study will be performed at the Experimental Social Science Laboratory (Xlab) at the University of California, Berkeley. The laboratory space consists of 36 laptops with cubicle walls separating each laptop. We used individual host firewalls to simulate the censorship environments. We plan to write a browser extension to measure when users visit what websites in order to log which websites they were successfully able to visit. The total length of the experiment should be less than an hour. Participants will be compensated \$30 for their time, which is more to cover minimum wage and transportation costs.  \\
+We plan to recruit around 150 users for the purpose of this study. This makes it largest user study to date on Tor (check this) This study will be performed at the Experimental Social Science Laboratory (Xlab) at the University of California, Berkeley. The laboratory space consists of 36 laptops with cubicle walls separating each laptop. We used individual host firewalls to simulate the censorship environments. We plan to write a browser extension to measure when users visit what websites in order to log which websites they were successfully able to visit. The total length of the experiment should be less than an hour. Participants will be compensated \$30 for their time, which is more to cover minimum wage and transportation costs.  \\
 
 \section{What we want feedback on}
 
