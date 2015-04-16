@@ -1,6 +1,6 @@
-all: paper.pdf
+all: tor-censorship-usability.pdf
 
-paper.pdf: paper.tex bibliography.bib
+tor-censorship-usability.pdf: tor-censorship-usability.tex bibliography.bib
 
 %.pdf: %.tex
 	pdflatex "$*"
@@ -10,6 +10,6 @@ paper.pdf: paper.tex bibliography.bib
 	pdflatex "$*"
 
 clean:
-	rm -f paper.pdf
+	rm -f tor-censorship-usability.pdf
 
 .PHONY: all clean
