@@ -81,7 +81,13 @@ if they could understand the address bar/menu, how well they were able to comple
 
 We recruited five journalists from Berkeley by reaching out to journalist contacts. 
 %Demographics here. 
-During the study, we recorded their screen, what they were saying out loud in their cognitive walk through, and also cast their screen into a room with Tor developers. The participants also took an exit survey which estimated their familiarity with technology and security. On average, participants took 26 minutes to complete the study ($\sigma = 7$~min).  The result was that people did have difficulty with downloading the Tor browser because of the gatekeeper icon, did not understand what many of the many options meant, and were confused about why certain things were happening. 
+During the study, we made a video recording of each participant's computer screen
+and simultaneously projected it
+into another room with Tor developers.
+We recorded what they were saying out loud in their cognitive walk through,
+and later added these words to the screen videos as subtitles.
+The participants also took an exit survey which estimated their familiarity with technology and security. On average, participants took 26 minutes to complete the study ($\sigma = 7$~min).  The result was that people did have difficulty with installing Tor Browser (principally because of the Gatekeeper code-signing feature on OS~X), did not understand what many of the many options meant, and were confused about why certain things were happening. 
+Our talk will feature brief highlights of the screen videos.
 
 After our first  usability evaluation of Tor, it was clear to us that so many of the features had been left unevaluated---such as advanced web browsing tasks, the configuration menu, automatic updates, and identity and cookie management. 
 %say something about how we resolved this somehow, and how it doesn't necessarily need our attention now
@@ -183,8 +189,8 @@ we will be especially interested in soliciting feedback
 on these topics:
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item {\bfseries Targeting specific pluggable transports.}
-Some pluggable transports work in censorship environments
+\item {\bfseries Targeting specific pluggable transports}
+Some of Tor's pluggable transports work in censorship environments
 where others do not.
 Additionally, some of them require additional information
 (like bridge addresses) before they work.
@@ -192,20 +198,20 @@ Is there a way to target testing of specific transports?
 Is there anything to infer from participants' selection of transports, 
 or do we assume they are trying transports at random?
 
-\item {\bfseries Censorship environments.}
-Our proposed censorship environments are informed
+\item {\bfseries Censorship environments}
+Our proposed censorship simulation is informed
 by real-world censors.
 What other representative environments
 should be tested?
 
-\item {\bfseries Browsing tasks.}
+\item {\bfseries Browsing tasks}
 Circumvention is broader than the stereotypical
 ``dissident blogger'' use case.
 We have invented some tasks that use some of the
 most popular web sites.
 What other browsing tasks make sense to test?
 
-\item {\bfseries Experimental design.}
+\item {\bfseries Experimental design}
 Our initial study was aimed at a specific subset of users (journalists).
 We plan to remove this restriction in order
 to have a larger participant population.
