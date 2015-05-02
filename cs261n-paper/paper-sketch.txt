@@ -1,0 +1,36 @@
+=================
+== META ADVICE ==
+=================
+
+Linda, STOP doing these things: 
+-talking about more than one main contribution of a paper. Distill. 
+-previewing results. just talk about the results instead--as fast as possible. 
+-include nothing before the results that is not required to understand the results. 
+-cite concrete examples. don't overestimate the audience. 
+-citing too much; only cite really relevant work 
+
+Linda, CONTINUE to do these things: 
+-figures and tables are good. 
+-using small words (use > utilize, several > diverse), etc. 
+-avoiding italic overuse, footnote overuse, etc. 
+-appendixes for details. 
+-in conclusion, don't restate what I found (mentioning it in abstract, then intro, and body is enough); focus on limitations of work and broader implications 
+
+==================
+== PAPER SKETCH ==
+================== 
+
+ABSTRACT (just ONE insight + ONE contribution):
+
+It is easy to drastically overestimate user comprehension and therefore be misguided for user behavior. Even though people download and install things all the time, they do not know how to do it securely, and worse, they are habituated into doing it a certain way. Through running a UX sprint, I found that what users had trouble with were the most basic tasks, such as downloading and installing Tor, rather than nagivating a robust menu or understanding subtleties of security guarentees. We use this insight to fix a bunch of stuff and also present a new experiment with a basic enough focus, making us the first to focus on censorship too. 
+
+PUT SOMEWHERE ELSE: 
+
+(impact?) 
+We also took the opportunity to push 15 tickets through Tor, installing concrete changes in the Tor browser. A summary[link] of the UX sprint is here. A call for help [link:here],  We collaborate with Allison to create simple, highly-visual user manual for the issues uncovered. 
+
+(background/motivation?) 
+Unforunately, government surveillance and control has made internet anonymity and censorship circumvention very relevant for everyday users. 
+
+(ethical considerations) 
+IRB when other Tor people are involved. Making tasks which are good. 

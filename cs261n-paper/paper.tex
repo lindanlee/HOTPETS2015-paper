@@ -1,4 +1,4 @@
-\documentclass{acm_proc_article-sp}
+\documentclass{sig-alternate-hotpets15}
 \usepackage{color}
 \usepackage[hyphens]{url}
 \usepackage{longtable}
@@ -21,12 +21,136 @@
 }{\end{itemize}}
 
 \begin{document}
-\input{tex-inputs/title.tex}
-\input{tex-inputs/abstract.tex}
-\input{tex-inputs/introduction.tex}
-\input{tex-inputs/related_work.tex} 
-\input{tex-inputs/experiment.tex}
-\input{tex-inputs/conclusion.tex}
+
+\title{better title eventually}
+\numberofauthors{1}
+\author{
+ \alignauthor Linda N. Lee, David Fifield\\
+   \affaddr{University of California, Berkeley, \{lnl, fifield\}@cs.berkeley.edu} \\
+   \vspace{0.5em}
+   CS261N Final Report, \today
+}
+\maketitle
+
+% is the abstract missing some oomph? 
+% I don't know how much the storyline is showing through.. or what we are testing. 
+\begin{abstract}
+It is easy to drastically overestimate user comprehension 
+and therefore be misguided for user behavior. 
+Even though people download and install things all the time, 
+they do not know how to do it securely, and worse, 
+they are habituated into doing it a certain way. 
+What users had trouble with were the most basic tasks, 
+such as downloading and installing Tor, rather than 
+nagivating a robust menu or understanding subtleties of security guarentees. 
+This is really troubling, and matters for things like Tor. 
+We use this insight to fix a bunch of stuff and also 
+present a new experiment with a basic enough focus, 
+making us the first to focus on censorship too. 
+\end{abstract}
+
+\keywords{User Studies, Tor, Anonymity, Censorship, Security}
+
+\section{Introduction} %this should CLEARLY state the results. 
+Talk about the results and contributions concretely.
+As short as possible summary of UX sprint here. %only what is necessary to understand results. 
+Talk about the changes resulted in the Tor browser here.
+As short as possible summary of lessons learned, 
+and also a short as possible motivation for censorship work here. %yep, same.
+Talk about the experiment design quickly here. 
+
+\section{Background}  %ramp people up! 
+
+\subsection{Tor} 
+Talk about anything relevant to Tor. Just enough background so
+that people who have never heard of it will know what I am talking
+about, but no more than that. 
+
+\subsection{User behavior}
+Then also talk about any of the behaviors we are trying to mitigate,
+or talk about the average user and what they know, how they are motivated,
+just sketching out the environment in general. 
+
+\subsection{Usable security impact} 
+cite work which has made a huge impact on how people use it, and 
+other things which still remain broken because of usability issues. 
+
+We don't want Tor to be like this, and want people to use it!
+
+\subsection{Censorship} 
+Motivational paragraph time about how this is so everywhere. 
+
+Talk about the basic methods of censoring, and how it differs 
+around the world, which sites are targeted, etc. 
+
+Scope the paper here. Talk about how we are not up Cuba-like adversaries. 
+
+\section{UX sprint} 
+Details. Gory gory details of how it all went down. 
+Include the recruitment process, the setup, what the exact 
+tasks were for participants, demographics, everything. 
+It all should have a home here. 
+
+\section{Results}
+Present situations which really were unexpected. 
+Also extract the golden quotes and state them here 
+to prove points I want to make.  
+
+\subsection{Impact}
+whoo talk about the cool stuff that happened next here. 
+This means talking about the tickets and changes made 
+to the Tor browser, the start of a user manual, and 
+increased Tor UX efforts as a whole.
+
+\subsection{Takeaways} 
+highlight what we learned and use this to transition into 
+the design of the next experiment. 
+
+Wanted reproducibility of experiment.
+Wanted more people for a representative population. 
+Also make practical considerations such as avoiding transcription. 
+
+\section{Experiment Design} 
+an informed, user-conscientious, user-focused experiment design to target 
+narrow sets of basic features which are used for censorship. 
+
+\subsection{Methodology}  
+Talk about the justification of the setup and the general 
+work flow of an experiment session. Address any details up front
+about computers, money, people, etc. 
+
+\subsection{Censorship Environments} 
+Basically a section like the HOTPETS paper section.
+I should add details of exact configurations if available. 
+
+\subsection{Tasks}
+A section like the HOTPETS paper section. 
+I  should add details of exact tasks if available.
+
+\subsection{Feedback} 
+Talk about the exit survey and what that covers. 
+Explain why we want to know what we are asking about. 
+And why this matters. 
+
+\section{Discussion} 
+Discuss the hypotheses we have here for the experiment. 
+
+And any work that needs to be done for the experiment. 
+
+Next stps to take after the experiment, can also be here. %is this too far away? 
+
+\section{Related Work} %this is distracting to have earlier. %don't overdo the citations. 
+The stopping points paper on Tor's usability ~\cite{norcie2012eliminating}. 
+And that is pretty much it for Tor usability stuff. %find more if it exists
+
+I guess that other literature on general usability applies here too. %so search for it. 
+
+\section{Conclusion} 
+Do not repeat the abstract, introduction, or the results section. 
+Focus this time to discuss the limitations of the work and broader impacts. 
+
+Reach out to the community to make a call for more a focus on usability for security products. 
+
 
 \bibliographystyle{abbrv}
 \bibliography{bibliography.bib} 

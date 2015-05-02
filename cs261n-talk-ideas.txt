@@ -1,0 +1,42 @@
+
+Start with the big idea: 
+
+Our talk will describe a future study aimed at evaluating how easily users can circumvent censorhip using Tor browser.
+
+
+Bag of ideas for the talk: 
+
+-tor was accidentally used for circumvention. It's just another proxy which people didn't figure out. But tor with pluggable transports are good. 
+
+0. Tor is a system worth investigating because it has been used for (other things and) censorship circumvention and has resisted attacks.
+-screenshots of the configuration interface. >> storyline like the HOTPETS paper (focusing on a narrow set of features).
+
+1. We set up an experiment with different network conditions. We do this because there are different censorship environments in the wild. 
+-visual of our censorship environments. 
+-we're not trying to simulate environments exactly. 
+
+-we're trying to test all conditions (mention effect size and statistical tests which are better with a certain minimum number of people, but also just to be sound)
+-list of browsing tasks. people know how to do these things. some are blocked irl. 
+-diff environment, same tasks
+ 
+3. We are measuring success rates and completion times for tasks. We expect that users will actually be very good at these tasks, but we're actually trying to measure how successful they were at configuring Tor for circumventing censorship. 
+-we informed people that they were being censored! 
+-introduce past study to say why we don't do screenshots.
+-we found people had common problems, and we plan to capture this with targeted questions and an open-ended section. 
+-ticket screenshots. what were common problems found in the pilot study. 
+
+We haven't done this yet; first study took long. 
+We're going to HOTPETS!
+And we're going to start this in the summer. 
+
+
+
+
+
+
+
+(-short clips of people struggling. 
+-quotes if they help any point I am trying to make.)
+
+ 
+ 
