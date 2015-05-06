@@ -1,6 +1,6 @@
 all: paper.pdf
 
-paper.pdf: paper.tex tex-inputs/*.tex bibliography.bib
+paper.pdf: paper.tex bibliography.bib
 
 %.pdf: %.tex
 	pdflatex "$*"
