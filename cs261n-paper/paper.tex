@@ -32,21 +32,16 @@ University of California, Berkeley, \{lnl, fifield\}@cs.berkeley.edu
 % is the abstract missing some oomph? 
 % I don't know how much the storyline is showing through.. or what we are testing. 
 \begin{abstract}
-\indent \indent It is easy to drastically overestimate user comprehension 
-and therefore be misguided for user behavior. 
-Even though people download and install things all the time, 
-they do not know how to do it securely, and worse, 
-they are habituated into doing it a certain way. 
-What users had trouble with were the most basic tasks, 
-such as downloading and installing Tor, rather than 
-nagivating a robust menu or understanding subtleties of security guarentees. 
-This is really troubling, and matters for things like Tor. 
-We use this insight to fix a bunch of stuff and also 
-present a new experiment with a basic enough focus, 
-making us the first to focus on censorship too. 
+\indent \indent Tor has grown beyond its original purpose and has  since become an important 
+Internet circumvention tool. We specifically examine it usability as a censorship circumvention tool, 
+an essential facet for adoption and use.  We focus our analysis on the connection configuration dialog of 
+Tor browser, as censorship circumvention requires correct transport configurations. 
+This study is aimed at evaluating if and how easily users can circumvent censorship using Tor Browser,
+isolating specific browser features to study in the process.  To this end, we present the design of
+ a large-scale user study examining hundreds of users  on how they navigate Tor's configuration wizard to complete seven browsing tasks in three different adversarial settings. The experiment is scheduled for August 2015.
 \end{abstract}
 
-\section{Introduction} %this should CLEARLY state the results. 
+\section{Introduction} %%% 
 \indent \indent Talk about the results and contributions concretely.
 As short as possible summary of UX sprint here. %only what is necessary to understand results. 
 Talk about the changes resulted in the Tor browser here.
@@ -54,73 +49,122 @@ As short as possible summary of lessons learned,
 and also a short as possible motivation for censorship work here. %yep, same.
 Talk about the experiment design quickly here. 
 
-\section{Background}  %ramp people up! 
+what we want to contribute to the research community. 
 
-\subsection{Tor} 
+\subsection{Tor} %%% 
 \indent \indent Talk about anything relevant to Tor. Just enough background so
 that people who have never heard of it will know what I am talking
 about, but no more than that. 
 
-\subsection{User behavior}
-\indent \indent Then also talk about any of the behaviors we are trying to mitigate,
-or talk about the average user and what they know, how they are motivated,
-just sketching out the environment in general. 
-
-\subsection{Usable security impact} 
-\indent \indent cite work which has made a huge impact on how people use it, and 
-other things which still remain broken because of usability issues. 
-
 We don't want Tor to be like this, and want people to use it!
 
-\subsection{Censorship} 
+\subsection{Censorship} %%%
 \indent \indent Motivational paragraph time about how this is so everywhere. 
+
+\subsection{What is Required of Users} %%%
+\indent \indent For users to circumvent censorship in their resident countries, they will need to 
+configure Tor to set up a proxy, bridge, or both. The requirement of the user will vary on their censorship
+environment, specifically, if they need to conceal the fact that they are using Tor or if Tor entry nodes 
+have been blocked by the government. 
+
+There is a configuration wizard to help guide users through setting up their connection, but our hypothesis is that the average user will not easily be able to configure Tor correctly in these adverse settings, as they require the user to provide IP addresses of proxies or bridges to use. The goal of our experiment is to see how successful users are at carrying out common browsing tasks in an adversarial setting using Tor.
 
 Talk about the basic methods of censoring, and how it differs 
 around the world, which sites are targeted, etc. 
 
 Scope the paper here. Talk about how we are not up Cuba-like adversaries. 
 
-\section{UX sprint} 
+\section{UX sprint}  %%%%
 \indent \indent Talk about it just enough that it makes a good storyline for the experiment that we 
 are proposing a design of. Motivate it a little bit, and tell a story. 
 
 Appendix ~\ref{sec:pilot}.
 
+It is easy to overestimate user comprehension and therefore be 
+misguided for user behavior. Even though people download and install things all the time, 
+they do not know how to do it securely, and worse, they are habituated into doing it in the 
+insecure manner. Of course, this is because the average user's objective is not security. 
+For instance, most of our participants thought the download source was a legitimate site because
+of the look and feel of the site and none our our participants thought to verify the download, 
+even though there were clear instructions to do so on the download page. 
+
+During this pilot, the users were struggling with confusing bugs, such as flash errors which
+say ``Firefox'' rather than ``Tor,'' disappearing buttons on the configuration window, and errors when
+launching Tor from the download dialog rather than from their applications folder. This resulted in our 
+participants spending most of their time on the download and install tasks, rather than 
+navigating a robust menu or questioning the clarity of provided security guarantees. 
 
 \subsection{Impact}
-\indent \indent whoo talk about the cool stuff that happened next here. 
-This means talking about the tickets and changes made 
-to the Tor browser, the start of a user manual, and 
-increased Tor UX efforts as a whole.
+\indent \indent Along with the Tor developers who came to observe the UX pilot, we filed 
+a total of sixteen bug tickets to Tor. At the time of  this writing, eight of the sixteen tickets 
+have already been resolved, and more will be resolved in the future.  The list of bug
+tickets filed can be found at \url{https://trac.torproject.org/projects/tor/query?keywords=~uxsprint2015}. 
+
+As of April, the changes resulting from our pilot study has been incorporated into the latest 
+version of Tor Browser, making Tor more usable for people to use. 
+The summary of the usability changes can be found at \url{https://blog.torproject.org/blog/tor-browser-45a4-released}. 
+
+Through the publicity of this usability pilot study on the Tor weekly blogs, we were connected
+with a source from the Library Freedom Project, which provides training on various technologies 
+to libraries across the country. We now collaborate with her work on creating a user manual
+for the Tor Browser. 
 
 \subsection{Takeaways} 
-\indent \indent highlight what we learned and use this to transition into 
-the design of the next experiment. 
+\indent \indent During the pilot study, we were attempting to test out a comprehensive set of 
+features for the Tor Browser. Our users had difficulties completing all the given tasks in the 
+time alloted for the experiment. Additionally, user fatigue was very evident, with users not 
+engaging in the later set of tasks after being tired from the download and install process. 
+To ensure that the experiment does not cause user fatigue, we select a smaller set of features 
+as the target for the full-scale study.  After deliberating with Tor developers, and testing out
+various features on our own, we chose to focus on the Tor Browser connection configuration 
+dialog because of its crucial role in censorship circumvention. 
 
-Wanted reproducibility of experiment.
-Wanted more people for a representative population. 
-Also make practical considerations such as avoiding transcription. 
+Although the data from the pilot study provided a lot of insight into what users thought processes
+are when completing various asks, transcribing audio recordings and syncing them to videos was
+required a lot of manual labor. Not only did this form of data collection and processing not scale 
+to larger numbers, we found that most users encountered similar thought processes and struggled
+with the same issues. Because of this, we aim to collect our future qualitative data in the form of 
+an open-ended survey question rather than using audio recordings. 
+
+While our pilot was insightful, the experiment itself is not very reproducible, as it requires
+a specific target audience (journalists who have recently reported in other countries) along 
+with specific guidance and feedback on how to perform a cognitive walkthrough. This makes it hard
+for the research community to prove or build on any findings. Therefore, we take precautions
+to ensure that our full-scale study will be reproducible. 
 
 \section{Experiment Design}
 
-\subsection{Motivation}
- talk about the generalizability of the work, what we aim to find, and what future work this will lead to. Be sure to sketch the storyline of honing in on specific features. 
+\subsection{Overview} %%%
+Our experiment consists of three parts: informing and motivating the participants in order 
+to roleplay in the experiment, asking our participants to complete a set of web browsing tasks which will 
+require them to circumvent censorship using the Tor Browser, and soliciting feedback from our participants
+about their experience. With participants' consent, we will also record their computer screen to monitor 
+their activity and employ a browser extension to take empirical measurements (such as idle waiting time, 
+how fast a particular task was completed, etc.) throughout the duration of this experiment. 
 
-Tor has grown beyond its original purpose as and has 
-since become an important Internet circumvention tool.
-We specifically examine it usability as a censorship circumvention tool,
-an essential facet for adoption and use.  
-We focus our analysis on the connection configuration dialog of Tor browser,
-as censorship circumvention requires correct transport configurations. %%
-This study is aimed at evaluating 
-if and how easily users can circumvent censorship using Tor Browser,
-isolating specific browser features to study in the process. 
-To this end, we will conduct a large-scale user study examining hundreds of users 
-on how they navigate Tor's configuration wizard to complete seven browsing tasks 
-in three different adversarial settings. 
+Each session of 30 participants will be placed in the same simulated censorship environment. 
+We start off the experiment by informing our participants that they are in an adversarial setting, 
+where some websites are blocked while other websites are not. We will instruct them to visit a censored
+website and a non-censored website to illustrate that their devices and the network is fully functional and
+operating as expected, but that they are in a censorship environment where some websites will fail to load. 
+We will take a moment to explain what Tor is, how it is generally used in this case, and ask them to complete 
+the aforementioned set of tasks. To complete all the tasks, the participants will ultimately need to get the correct
+configuration settings for the country they are simulated to be in. 
 
-\subsection{What is Required of Users}
-\indent \indent For users to circumvent censorship in their resident countries, they will need to configure Tor to set up a proxy, bridge, or both. There is a configuration wizard to help guide users through setting up their connection, but our hypothesis is that the average user will not easily be able to configure Tor correctly in these adverse settings, as they require the user to provide IP addresses of proxies or bridges to use. The goal of our experiment is to see how successful users are at carrying out common browsing tasks in an adversarial setting using Tor. 
+Then, each participant will be given about 30 minutes to complete their given Internet browsing tasks. 
+Note that these Internet tasks themselves do not take very much time, but that the time is alloted in order
+for participants to complete the configuration process. We believe that this is more than enough time to 
+test the usability of the configuration process. Even if some participants may have succeeded with more 
+time, we consider these cases to be a failure from a usability perspective as this would require too much
+time from a user in the wild. Minimal interaction will be allowed with participants and the researchers. 
+Researchers may inform participants of specific information (such as a bridge address) in a manner 
+which does not disturb other participants (such as instructing users to visit a specific non-blocked website 
+containing this information). 
+
+We will end the experiment with a survey of 17 questions in order to collect basic participation information, 
+demographics of our participants, open-ended responses of their experience with censorship circumvention,
+and general security questions to gauge their awareness in this area. Along with the empirical measurements 
+we have taken during the experiment, we will use this survey information to determine which configuration tasks are hard (bridges versus proxies, etc.), how many were successful, how long it took users to configure, if they understood the process, if they were confident that it was working as expected, etc.  
 
 \subsection{Censorship Environment Simulation}
 \indent \indent For our experiment, we plan to simulate and test three distinct censorship environments
@@ -220,36 +264,16 @@ or if there are different tasks which are representative of other censorship eva
 
 \section{Methodology}  
 
-\indent \indent Our experiment consists of three parts: informing and motivating the participants in order 
-to roleplay in the experiment, asking our participants to complete a set of web browsing tasks which will 
-require them to circumvent censorship using the Tor Browser, and soliciting feedback from our participants
-about their experience. With participants' consent, we will also record their computer screen to monitor 
-their activity and employ a browser extension to take empirical measurements (such as idle waiting time, 
-how fast a particular task was completed, etc.) throughout the duration of this experiment. 
+\subsection{Recruitment}  
+\indent \indent We plan to recruit up to 200 users for the purpose of this study, making this the largest user 
+study to date examining Tor. We do this in order to increase our chances at recruiting a diverse
+user population, ranging in age, gender, technical fluency, and other characteristics. Since Tor 
+does not keep information regarding its user base, we will try to obtain a user base representative of
+the average Internet using-population. Additionally, recruiting a large number of participants has the 
+benefit of ensuring enough samples in order to have significant effect sizes in 
+each simulated censorship environment. 
 
-Each session of 30 participants will be placed in the same simulated censorship environment. 
-We start off the experiment by informing our participants that they are in an adversarial setting, 
-where some websites are blocked while other websites are not. We will instruct them to visit a censored
-website and a non-censored website to illustrate that their devices and the network is fully functional and
-operating as expected, but that they are in a censorship environment where some websites will fail to load. 
-We will take a moment to explain what Tor is, how it is generally used in this case, and ask them to complete 
-the aforementioned set of tasks. To complete all the tasks, the participants will ultimately need to get the correct
-configuration settings for the country they are simulated to be in. 
-
-Then, each participant will be given about 30 minutes to complete their given Internet browsing tasks. 
-Note that these Internet tasks themselves do not take very much time, but that the time is alloted in order
-for participants to complete the configuration process. We believe that this is more than enough time to 
-test the usability of the configuration process. Even if some participants may have succeeded with more 
-time, we consider these cases to be a failure from a usability perspective as this would require too much
-time from a user in the wild. Minimal interaction will be allowed with participants and the researchers. 
-Researchers may inform participants of specific information (such as a bridge address) in a manner 
-which does not disturb other participants (such as instructing users to visit a specific non-blocked website 
-containing this information). 
-
-We will end the experiment with a survey of 17 questions in order to collect basic participation information, 
-demographics of our participants, open-ended responses of their experience with censorship circumvention,
-and general security questions to gauge their awareness in this area. Along with the empirical measurements 
-we have taken during the experiment, we will use this survey information to determine which configuration tasks are hard (bridges versus proxies, etc.), how many were successful, how long it took users to configure, if they understood the process, if they were confident that it was working as expected, etc.  
+ %% what we will recruit for, how we inform, and interactions.  
 
 \subsection{Quantitative and Qualitative Data}   
 \indent \indent We will collect quantitative and qualitative data from our participants after they have completed 
@@ -302,15 +326,7 @@ idle from time spent typing during the completion of a task).
 
 \subsection{Experimental Setup} 
 
-\indent \indent We plan to recruit up to 200 users for the purpose of this study, making this the largest user 
-study to date examining Tor. We do this in order to increase our chances at recruiting a diverse
-user population, ranging in age, gender, technical fluency, and other characteristics. Since Tor 
-does not keep information regarding its user base, we will try to obtain a user base representative of
-the average Internet using-population. Additionally, recruiting a large number of participants has the 
-benefit of ensuring enough samples in order to have significant effect sizes in 
-each simulated censorship environment. 
-
-This study will be conducted at the Experimental Social Science Laboratory (Xlab)
+\indent\indent This study will be conducted at the Experimental Social Science Laboratory (Xlab)
 at the University of California, Berkeley. Recruitment will be conducted through Craigslist. 
 Although Xlab provides a portal in which researchers can recruit a pre-registered user base,
 we choose to not recruit through this portal, as their participants mostly consist of mostly Berkeley 
@@ -361,18 +377,22 @@ iterative A/B testing on various designs in order to increase usability to a wid
 use base will be an interesting area of user interface design research while also making impacting changes
 to a widely used censorship circumvention technology. 
 
-\section{Related Work} %this is distracting to have earlier. %don't overdo the citations. 
+\section{Related Work} %%%
+%%%Tor
 The stopping points paper on Tor's usability ~\cite{norcie2012eliminating}. 
 And that is pretty much it for Tor usability stuff. %find more if it exists
 
 I guess that other literature on general usability applies here too. %so search for it. 
 Especially look into browser configuration work. %do it to it. 
 
-\section{Conclusion} 
-Do not repeat the abstract, introduction, or the results section. 
-Focus this time to discuss the limitations of the work and broader impacts. 
+%%%User behavior
+\indent \indent Then also talk about any of the behaviors we are trying to mitigate,
+or talk about the average user and what they know, how they are motivated,
+just sketching out the environment in general. 
 
-Reach out to the community to make a call for more a focus on usability for security products. 
+%%% Other Usability stuff 
+\indent \indent cite work which has made a huge impact on how people use it, and 
+other things which still remain broken because of usability issues. 
 
 \appendix
 
