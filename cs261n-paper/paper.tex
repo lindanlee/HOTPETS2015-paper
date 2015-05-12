@@ -496,25 +496,25 @@ tradeoffs made to users, and informing why, not how, precautions are taken for s
 
 \section{UX sprint}
 \label{sec:pilot}
-\indent \indent This pilot was to test-drive an experiment which examines the usability of Tor as an anonymity tool
-with respect to a target demographic of users known to use Tor (journalists who have reported in other
-countries). We emphasized the targeting of a high-risk user group of Tor and to 
+\indent \indent This pilot examined the usability of Tor as an anonymity tool
+with respect to journalists, a target demographic of users known to use Tor. 
+We emphasized the targeting of a high-risk user group of Tor and to 
 target usability changes aimed at helping those who could not afford to make mistakes. To see 
 if those users had any potentially damaging misunderstandings or incomprehensions of Tor, 
 we created tasks to elicit Tor's non-typical behaviors and ask our participants to
 navigate through more advanced settings. 
 
 \subsection{Experiment Overview}
-\indent \indent Our experiment consisted of three parts. We first prepare our participants to perform a 
-cognitive walkthrough, ask our participants to perform a list of Internet browsing 
-tasks while performing a cognitive walkthrough, and finish with an exit survey to collect 
-additional information. 
+\indent \indent Our experiment consisted of three parts. We first prepared our participants to perform a 
+cognitive walkthrough, asked our participants to perform a list of Internet browsing 
+tasks while performing a cognitive walkthrough, and finished with an exit survey to collect 
+demographic information. 
 
-To first ensure that our users knew what a cognitive walkthrough is, we explain what a cognitive
-walkthrough and give a demonstration of a cognitive walkthrough on a non-related dummy task 
-(drawing a red hexagon in the computer graphics program Paint). We then ask our users to perform
+To first ensure that our participants are able to perform a cognitive walkthrough is, we explain what a cognitive
+walkthrough is and gave a demonstration of a cognitive walkthrough on a non-related dummy task 
+(drawing a red hexagon in the computer graphics program Paint). We then asked our users to perform
 an unrelated Internet-based task (finding the population of Zimbabwe) using any browser of their choice
-while performing a cognitive walkthrough along the process of completing the task. We give our 
+while performing a cognitive walkthrough. We took this opportunity to give our 
 participants feedback on how to properly conduct a cognitive walkthrough~\cite{wharton1994cognitive}.
 This process was also used to get users comfortable with talking our loud with the researcher and gauge 
 how comfortable users were with a computer.
@@ -541,13 +541,14 @@ to have to go through the longer ``Configure'' path,
 but they assumed they had to because of the presence
 of the word ``Configure'' in the list of tasks.
 
-Tasks 1--3 test how easy it was for a user to search for, download, and install Tor Browser 
+Tasks 1--3 tested how easy it was for a user to search for, download, and install Tor Browser 
 correctly for use and if they understood that they had done the tasks correctly. 
 Since no software is useful if the user is not able to access it, we found it valuable
-to test the usability of this process.  Additionally, tasks 4--6 highlight Tor's ``irregular'' behavior 
-comparatively to other web browsers. Specifically, gauge user reactions to Tor's default
-privacy-preserving search engine Startpage,  longer loading times and performance for videos, 
-and disappearing tabs upon starting a new identity. Lastly, we asked our users to 
+to test the usability of this process.  Additionally, tasks 4--6 highlighted Tor's ``irregular'' behavior 
+comparatively to other web browsers. Specifically, we wanted to gauge user reactions to Tor's
+privacy-preserving search engine Startpage, decreased performance, 
+and side effects of advanced settings (such as disappearing tabs upon starting a new identity).
+ Lastly, we asked our users to 
 interact with and describe buttons on the toolbar to gauge user comprehension of how Tor functioned.
 
 We finished the experiment with a short exit survey which asked their basic demographics information 
@@ -556,7 +557,7 @@ ask any questions about the Tor Browser that they encountered during their walkt
 
 \subsection{Methodology} 
 \indent \indent We recruited five journalists from Berkeley by reaching out to journalist contacts.
- We recruited five users with an average age of 28 ($\sigma = 13 $~years). Out of 
+ We recruited five users with an average age of 28 ($\sigma = 13 $~years).  Out of  %?
 our five participants, 3 were female. 
 
 We conducted the experiment on January 30-31st in Soda 
@@ -574,13 +575,12 @@ considerations as voice is considered an identifying characteristic.
 
 \subsection{Results}
 \indent \indent This experiment uncovered a powerful vector for attack, an unlikely source
-of usability issues, and insight into how to better communicate to users so that they can be 
-empowered to use Tor Browser and its advanced settings. 
+of usability issues, and how users communicated with the current interface design.
 
 \subsubsection{How to Attack Users}
 During the task completion process, we observed that all our participants are likely 
-susceptible to a search engine optimization (SEO) poisoning attack. Most of our 
-participants  were on autopilot to complete this standard download task and 
+susceptible to a search engine optimization (SEO) poisoning attack during the 
+Tor download process. Most of our  participants were on autopilot and 
 were also not aware of the possibility that their download may come from an 
 illegitimate source. Usually, our participants picked whichever was the first search
 result and believed it to be a good enough source for the download: 
@@ -607,8 +607,7 @@ That might save a few steps, I will click on that.''} \mbox{---P5}
 \end{quote}
 
 Luckily, all of our users managed to download Tor browser from the legitimate source. However, 
-upon searching through various search engines with a clear history, we found that cnet.com or techsource.com 
- appears as the first search result. Defenses against SEO optimization would be prudent to employ. 
+defenses against SEO optimization would be prudent to employ. 
 
 \subsubsection{Fighting Mac's Security Features}
 The biggest usability obstacle was the result of tensions between Mac's Gatekeeper 
