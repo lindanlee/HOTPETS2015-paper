@@ -39,7 +39,7 @@ isolating specific browser features to study in the process.  To this end, we pr
  a large-scale user study examining hundreds of users  on how they navigate Tor's configuration wizard to complete seven browsing tasks in three different adversarial settings. The experiment is scheduled for August 2015.
 \end{abstract}
 
-\section{Introduction} %%% 
+\section{Introduction}
 
 \indent \indent We aim to improve user security by evaluating
 and improving the usability of security software.
@@ -165,7 +165,7 @@ to roleplay in the experiment, asking our participants to complete a set of web 
 require them to circumvent censorship using the Tor Browser, and soliciting feedback from our participants
 about their experience. With participants' consent, we will also record their computer screen to monitor 
 their activity and employ a browser extension to take empirical measurements (such as idle waiting time, 
-how fast a particular task was completed, etc.) throughout the duration of this experiment. 
+or how fast a particular task was completed) throughout the duration of this experiment. 
 
 Each session of 30 participants will be placed in the same simulated censorship environment. 
 We start off the experiment by informing our participants that they are in an adversarial setting, 
@@ -174,7 +174,8 @@ website and a non-censored website to illustrate that their devices and the netw
 operating as expected, but that they are in a censorship environment where some websites will fail to load. 
 We will take a moment to explain what Tor is, how it is generally used in this case, and ask them to complete 
 the aforementioned set of tasks. To complete all the tasks, the participants will ultimately need to get the correct
-configuration settings for the country they are simulated to be in. 
+configuration settings for the country they are simulated to be in.  Figure ~\ref{dialog} shows one of the 
+Tor configuration dialog screens that a user will need to navigate. 
 
 Then, each participant will be given about 30 minutes to complete their given Internet browsing tasks. 
 Note that these Internet tasks themselves do not take very much time, but that the time is alloted in order
@@ -192,6 +193,15 @@ and general security questions to gauge their awareness in this area. Along with
 we have taken during the experiment, we will use this survey information to determine which configuration tasks are hard (bridges versus proxies, etc.), how many were successful, how long it took users to configure, if they understood the process, if they were confident that it was working as expected, etc.  
 
 \subsection{Censorship Environment Simulation}
+
+\begin{figure}[t]
+\includegraphics[width=0.5\textwidth]{configuration-dialog.png}
+\caption{The fourth and final window of the Tor configuration dialog is what users will use to 
+configure their network settings to circumvent censorship. The instructions asks users to 
+choose a pluggable transport or enter custom bridges.}
+\label{dialog}
+\end{figure}
+
 \indent \indent For our experiment, we plan to simulate and test three distinct censorship environments
 which vary in their methods of censorship and thusly require distinct responses from our 
 participants to circumvent successfully. These environments are designed with respect to 
@@ -400,7 +410,7 @@ iterative A/B testing on various designs in order to increase usability to a wid
 use base will be an interesting area of user interface design research while also making impacting changes
 to a widely used censorship circumvention technology. 
 
-\section{Related Work} %%%
+\section{Related Work}
 
 \subsection{Usability work on Tor}
 \indent \indent  Work by Clark \etal to explore ways to simplify the Tor user interface
@@ -425,7 +435,7 @@ effective at reducing stopping points mentioned in the previous work. The author
 design heuristics for designing usable anonymous systems, such as easy installation, communicating
 tradeoffs made to users, and informing why, not how, precautions are taken for security guarantees ~\cite{norcie2014johnny}. 
 
-\subsection{Usable Security and User Behavior}
+\subsection{Usable Security and User Behavior} %%%
 \indent \indent {\color {red}  Then also talk about any of the behaviors we are trying to mitigate,
 or talk about the average user and what they know, how they are motivated,
 just sketching out the environment in general.}
@@ -459,12 +469,40 @@ of the experiment was. Also talk about how we expected users
 to be much better at installing and downloading than they were. }
 
 \subsection{Experiment Overview}
-{\color {red} Talk about how the experiment was for an average user. We start
-with the cognitive walkthrough, then have them do one on a dummy
-and calibration task, we give feedback on the walkthrough, and then 
-give them the freedom to complete the web tasks. 
+\indent \indent Our experiment consisted of three parts. We first prepare our participants to perform a 
+cognitive walkthrough, ask our participants to perform a list of Internet browsing 
+tasks while performing a cognitive walkthrough, and finish with an exit survey to collect 
+additional information. 
 
-GET THE LIST OF TASKS WE MADE THEM DO.}
+To first ensure that our users knew what a cognitive walkthrough is, we explain what a cognitive
+walkthrough and give a demonstration of a cognitive walkthrough on a non-related dummy task 
+(drawing a red hexagon in the computer graphics program Paint). We then ask our users to perform
+an unrelated Internet-based task (finding the population of Zimbabwe) using any browser of their choice
+while performing a cognitive walkthrough along the process of completing the task. We give our 
+participants feedback on how to properly conduct a cognitive walkthrough ~\cite{wharton1994cognitive}.
+This process was also used to get users comfortable with talking our loud with the researcher and gauge 
+how comfortable users were with a computer.
+
+Then our participants were instructed to complete the following tasks while performing a cognitive
+walkthrough:
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Search for, download, and install Tor Browser
+\item Do a web search for ``onions'' 
+\item Watch an ``Ode to Joy'' video on youtube 
+\item Use ``New Identity"
+\item Interact with and describe what you think the browser toolbar buttons do
+\end{itemize}
+
+The first task was to  test how easy it was for a user to search for, download, and install Tor Browser correctly for use. Since no software is useful if the user is not able to access it, we included this in the list of tasks.
+Additionally, we provided three tasks which highlights Tor's ``irregular'' behavior comparatively to other
+web browsers, to gauge if users were confused at the non-Google search engine, slow loading
+times for videos, and disappearing tabs upon starting a new identity. Lastly, we asked our users to 
+interact with and describe buttons on the toolbar to gauge user comprehension of how Tor functioned.
+
+We finished the experiment with a short exit survey which asked their basic demographics information 
+such as their age, gender, and education. Upon finishing the survey, participants had the opportunity to 
+ask any questions about the Tor Browser that they encountered during their walkthrough. 
 
 \subsection{Methodology}
 {\color {red} How we recruited, what the setup was like, how we got the tasks, details of 
@@ -475,8 +513,6 @@ how the experiment was run, and things like that.}
 Also extract the golden quotes and state them here 
 to prove points I want to make. }
 
-\url{https://blog.torproject.org/blog/ux-sprint-2015-wrapup}
-
 \subsection{Resources}
 
 \indent \indent  Our online artifacts of our completed pilot study, such as 
@@ -486,15 +522,19 @@ the summary, results, and resulting browser changes are below:
 \item \url{https://blog.torproject.org/blog/ux-sprint-2015-wrapup}
 \end{itemize}
 
-\noindent Subtitled screen videos:
+\noindent We transcribed the audio files from our participants' cognitive walkthroughs
+and synced them to the screen capture we took during the duration of the experiment:
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item \url{https://people.torproject.org/~dcf/uxsprint2015/}
 \end{itemize}
 
 \section{Exit Survey Questions}
 \label{sec:survey} 
-\indent \indent Our participants will be taking the following survey, hosted online at 
-\url{http://www.surveygizmo.com/s3/2085559/Tor-Usability-Survey/SG_TEST_RUN}.\\
+\indent \indent Our participants will be taking the following exit survey, hosted through
+SurveyGizmo at: 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item \url{http://www.surveygizmo.com/s3/2085559/Tor-Usability-Survey/SG_TEST_RUN}.
+\end{itemize}
 
 \noindent Recall that the survey consists of the following 17 questions, in this order: 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
