@@ -570,35 +570,30 @@ room during the experiment. Audio of the cognitive walkthrough was not broadcast
 considerations as voice is considered an identifying characteristic.
 
 \subsection{Results}
-\indent \indent Because of the limited size of the study, it's not possible to state with confidence what 
+\indent \indent This experiment uncovered a powerful vector for attack, an unlikely source
+of usability issues, and insight into how to better communicate to users so that they can be 
+empowered to use Tor Browser and its advanced settings. 
+Because of the limited size of the study, it's not possible to state with confidence what 
 fraction of users will encounter major usability obstacles. However, it was effective at discovering 
 and demonstrating issues that are likely to cause problems for many users. 
 People did have difficulty with installing Tor Browser (principally because of the Gatekeeper 
 code-signing feature on OS X), did not understand what many of the toolbar options meant, 
 and were confused by most Tor-specific behaviors. For specific problems 
-encountered by an individual user, we refer you to our resources below. 
+encountered by an individual user, we refer you to our resources online. 
 
-{\color {red}
-
-We saw an SEO poisoning opportunity. 
+\subsubsection{How to Attack Users}
+During the task completion process, we observed that all our participants are likely 
+susceptible to a search engine optimization (SEO) poisoning attack. Most of our 
+participants  were on autopilot to complete this standard download task and 
+were also not aware of the possibility that their download may come from an 
+illegitimate source. Usually, our participants picked whichever was the first search
+result and believed it to be a good enough source for the download: 
 
 \begin{quote}{\it
 `` I'm going to use Chrome, because that's what I use at home...
 I'm just going to open it up, and I'm going to type in "download tor" because 
 that's what I'm supposed to do. And I'm going to click on the first one, because,
-at the top, which is `Download Tor'.''} -P
-\end{quote}
-
-\begin{quote}{\it
-``Okay. So I just would type in `tor' in the uh search engine and `Tor Project'...
-`Anonymity Online'... I guess this is it. And I click. And the there is a "Download Tor", 
-so I am going to click this.''} -P2
-\end{quote}
-
-\begin{quote}{\it
-``There's, like, the first thing on the page is called the Tor Project, and I wouldn't figure out what that is,
-but then it says `Tor Browser' just a little bit underneath, so I get, I put two and two together and I figure 
-this is probably what I have to download.'}' -P3
+at the top, which is `Download Tor'.''} -P1
 \end{quote}
 
 \begin{quote}{\it
@@ -607,12 +602,26 @@ And that gives me some suggestions. I pick the first one.'''} -P4
 \end{quote}
 
 \begin{quote}{\it
+``There's, like, the first thing on the page is called the Tor Project, and I wouldn't figure out what that is,
+but then it says `Tor Browser' just a little bit underneath, so I get, I put two and two together and I figure 
+this is probably what I have to download.'}' -P3
+\end{quote}
+
+There was one participant who did not pick the first search result, but to save themselves
+time while completing the task: 
+
+\begin{quote}{\it
 ``I am going to go to torproject.org... I am seeing the second result is `Download Tor.'
 That might save a few steps, I will click on that.''} -P5
 \end{quote}
 
-Something unexpected which interfered with Tor's usability is that Mac's usable 
-security feature which prevents opening unsigned code made Tor much less usable.
+Luckily, all of our users managed to download Tor browser from the legitimate source. However, 
+upon searching through various search engines with a clear history, we found that cnet.com or techsource.com 
+ appears as the first search result. Defenses against SEO optimization would be prudent to employ. 
+
+\subsubsection{Fighting Mac's Security Features}
+The biggest usability struggle was the result of tensions between Mac's security feature 
+and Tor's usability, rather than a specific feature of the Tor Browser itself. 
 
 \begin{quote}{\it
 `` `The app has been modified...', blah blah blah... Oh, this is annoying. I would maybe normally stop now.''} -P1
@@ -623,11 +632,10 @@ security feature which prevents opening unsigned code made Tor much less usable.
 Grr! I express some frustration at this fact.''} - P4
 \end{quote}
 
-Lessons learned: 
-Leverage visuals and interface design to prioritize communication to users. Most of the 
-important information was communicated with paragraphs of text that users actively 
-communicated that they did not read or did not want to read and only read because of 
-issues they were experiencing. 
+\subsubsection{On Visual Communication}
+Through observing our participants, 
+we believe visual elements into their user interface design may be the key to 
+communicating with users.
 
 \begin{quote}{\it
 ``...it looks like I should click there, because it is purple. No, not because it's purple, but... 
@@ -645,9 +653,10 @@ There are a couple of other small words on the screen that I'm not going to look
 But I'll just pay attention because it's in capitals and it's like they're yelling at me.''} -P1
 \end{quote}
 
-Most participants did not have any interest or comprehension for advanced features.
-In usability literature, it is good to just configure these for users, but Tor does not track
-information on users. Maybe it's good to have failsafe defaults and less options. 
+\subsubsection{User Comprehension} 
+Most of our participants did not have the expertise to understand 
+the advanced setting for Tor Browser, and were wary to user it, but explaining why an option 
+tis available to the user may increase comprehension and tailored use.
 
 \begin{quote}{\it
 ``Yeah, and like the settings of your Tor Browser, I guess.''} -P1
@@ -664,7 +673,6 @@ So I'm guessing it's the same thing as with Google, when you open a page and you
 want the history to show up or something. And then you can, it's like you're disconnected 
 from your Gmail account and everything, you can type that as a different user.''} -P3 
 \end{quote}
-}
 
 \subsection{Resources}
 
