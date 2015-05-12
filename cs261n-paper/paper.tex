@@ -406,21 +406,37 @@ use base will be an interesting area of user interface design research while als
 to a widely used censorship circumvention technology. 
 
 \section{Related Work} %%%
-%%%Tor
- {\color {red} The stopping points paper on Tor's usability ~\cite{norcie2012eliminating}. 
-And that is pretty much it for Tor usability stuff.} %find more if it exists
 
-{\color {red}  I guess that other literature on general usability applies here too. %so search for it. 
-Especially look into browser configuration work. }
+\subsection{Usability work on Tor}
+\indent \indent  Work by Clark \etal to explore ways to simplify the Tor user interface
+has led to great usability improvements ~\cite{clark2007usability}.  Clark analyzed the challenges 
+of using multiple Tor-related tools including TorPark, Vidalia, FoxyProxy, and TorButton to find that
+none are fully satisfactory from a usability perspective. Researchers provide guidelines on 
+how to incorporate the best aspects of each tool, while providing a set of guidelines drawn from
+usable security and computer human interaction. Key takeaways from this work includes 
+finding out that exposure to how Tor works may be difficult for users to understand, and that 
+familiar, non-technical language is critical for communication. We plan to draw from Clark's
+guidelines as well as other works in usable security and computer human interaction to suggest
+any improvements to the Tor Browser. 
 
-%%%User behavior
+This will be the first experiment to evaluate Tor's usability as a censorship circumvention tool.
+Previous work on evaluating the usability of Tor as an anonymity system have been fruitful. 
+Norcie \etal identified ``stop points,'' or barriers to installing and using Tor to help streamline
+the interface. Key stop points included the ability to discriminate between anonymized and non-
+anonymized browser windows while using tor, unclear download and install processes, and 
+confusion as to why the Tor behaves in peculiar ways ~\cite{norcie2012eliminating}. A follow up
+study by Norcie \etal verifies that the changes recommended to the Tor Project were indeed 
+effective at reducing stopping points mentioned in the previous work. The authors also present
+design heuristics for designing usable anonymous systems, such as easy installation, communicating
+tradeoffs made to users, and informing why, not how, precautions are taken for security guarantees ~\cite{norcie2014johnny}. 
+
+\subsection{Usable Security and User Behavior}
 \indent \indent {\color {red}  Then also talk about any of the behaviors we are trying to mitigate,
 or talk about the average user and what they know, how they are motivated,
 just sketching out the environment in general.}
 
-%%% Other Usability stuff 
-\indent \indent {\color {red}  cite work which has made a huge impact on how people use it, and 
-other things which still remain broken because of usability issues.}
+{\color {red}  I guess that other literature on general usability applies here too. %so search for it. 
+Especially look into browser configuration work. }
 
 \appendix
 
@@ -457,7 +473,7 @@ to prove points I want to make. }
 
 \subsection{Resources}
 
-Our online artifacts of our completed pilot study, such as 
+\indent \indent  Our online artifacts of our completed pilot study, such as 
 the summary, results, and resulting browser changes are below:
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item \url{https://trac.torproject.org/projects/tor/wiki/org/meetings/2015UXsprint}
