@@ -448,7 +448,28 @@ to a widely used censorship circumvention technology.
 
 \section{Related Work}
 
-\subsection{Usability Work on Tor}
+\subsection{Usability for Security Software}
+\indent \indent 
+We evaluate the usability of the configuration window's interface. Generally, usability 
+refers to the learnability, efficiency, memorability, error rate/recoverability, and satisfaction
+during use. To achieve these goals, the HCI community has established heuristics for user
+interface design: visibility of the system status, using familiar
+language, preventing errors, having consistent visuals, flexibility and efficiency of use, 
+error recovery, and leveraging recognition over memorization ~\cite{nielsen199510}. Note
+that these are not specific usability guidelines, but heuristics. 
+
+Usability has sligtly different meanings depending on the context. Some emphasize
+learnability, flexibility, and ease of user. In a security context, the priorities are whatever is 
+required for the security to be used effectively. As stated by Whitten \etal, a security software is 
+usable if people who are expected to use it are reliably made aware of the security tasks to perform, 
+are able to figure out how to successfully perform those tasks, do not make dangerous errors, and
+are sufficiently comfortable with the software interface ~\cite{whitten1999johnny}. Since usable security 
+has user interface design goals than general consumer software, it likewise requires usability evaluation
+methods which are suitable to test these properties. Our goals are to test that the Tor Browser, 
+communicates an accurate conceptual model of the task to the users as quickly as possible, provide guidance to 
+users at the right time, and use warnings and other interactive tools to prevent any mistakes. 
+
+\subsection{Usability and Tor}
 \indent \indent  Work by Clark \etal to explore ways to simplify the Tor user interface
 has led to great usability improvements ~\cite{clark2007usability}.  Clark analyzed the challenges 
 of using multiple Tor-related tools including TorPark, Vidalia, FoxyProxy, and TorButton to find that
@@ -471,40 +492,9 @@ effective at reducing stopping points mentioned in the previous work. The author
 design heuristics for designing usable anonymous systems, such as easy installation, communicating
 tradeoffs made to users, and informing why, not how, precautions are taken for security guarantees ~\cite{norcie2014johnny}. 
 
-\subsection{Usable Security and User Behavior} %%%%%%
-% Okay, this is a mess. Last brain dump before sleep. 
-\indent \indent {\color {red} 
-The work that started usable security, using a cognitive walkthough to expose usability issues
-in PGP ~\cite{whitten1999johnny}. The authors give suggestions for better usability, such as 
-aligning words to pictures, etc. 
-
- Work which shows that people are willing to give up privacy for instant gratification with respect to 
- e-commerce, showing that participants' motivations are not aligned for preserving privacy, but to 
- complete the task at hand. ~\cite{acquisti2004privacy}. Talk about how censorship might be different
- because people need to actually configure to succeed.
- 
- People care about how easy something is to use when picking software ~\cite{}. 
- 
- infrastructure is highly distributed, with the bundle of
-tools in one single installer (below is the screenshot of
-the Vidalia control panel, which runs on many different
-platforms), making the technology accessible to average
-users BUt people don't care. 
- 
- users should not only look at the technical angle of their
-approach, but should also be aware of frequent attempts
-to infiltrate or otherwise identify social networks of
-people with dissenting opinions, even when they are
-only partially operating online. 
-
-you might want to choose a system based on the usability of others 
-~\cite{dingledine2006anonymity}.
-  
-  }
-
 \appendix
 
-\section{UX sprint} %%%%%%
+\section{UX sprint}
 \label{sec:pilot}
 \indent \indent This pilot was to test-drive an experiment which examines the usability of Tor as an anonymity tool
 with respect to a target demographic of users known to use Tor (journalists who have reported in other
