@@ -86,7 +86,7 @@ accessible even to nontechnical users.
 Its user interface was greatly overhauled in its version~3.5 release,
 and since then it has not had a comprehensive usability evaluation.
 
-\subsection{What is Required of Users} %%%
+\subsection{What is Required of Users}
 \indent \indent For users to circumvent censorship in their resident countries, they will need to 
 configure Tor to set up a proxy, bridge, or both. The requirement of the user will vary on their censorship
 environment, specifically, if they need to conceal the fact that they are using Tor or if Tor entry nodes 
@@ -104,25 +104,20 @@ dialog, which will require users in the most strict censorship environments to n
 required includes if their connection would require a proxy to access the Internet, the IP address of a bridge if required, 
 and which pluggable transports are functional in their country. 
 
-\section{UX sprint}  %%%%
-\indent \indent {\color {red} Talk about it just enough that it makes a good storyline for the experiment that we 
-are proposing a design of. Motivate it a little bit, and tell a story. 
-
-Appendix ~\ref{sec:pilot}. }
-
-It is easy to overestimate user comprehension and therefore be 
-misguided for user behavior. Even though people download and install things all the time, 
-they do not know how to do it securely, and worse, they are habituated into doing it in the 
-insecure manner. Of course, this is because the average user's objective is not security. 
-For instance, most of our participants thought the download source was a legitimate site because
-of the look and feel of the site and none our our participants thought to verify the download, 
-even though there were clear instructions to do so on the download page. 
+\section{A Pilot Tor Usability Study} 
+\indent \indent We ran a pilot Tor usability study to test the usability of Tor as an anonymity tool,
+targeting a specific demographic of users known to use Tor (journalists who have reported in other
+countries) and aiming to identify how well they could understand Tor's non-typical behaviors and 
+navigate advanced settings. For the full details of this pilot experiment, we refer you to Appendix ~\ref{sec:pilot}.  
 
 During this pilot, the users were struggling with confusing bugs, such as flash errors which
 say ``Firefox'' rather than ``Tor,'' disappearing buttons on the configuration window, and errors when
 launching Tor from the download dialog rather than from their applications folder. This resulted in our 
 participants spending most of their time on the download and install tasks, rather than 
-navigating a robust menu or questioning the clarity of provided security guarantees. 
+our original task for navigating a robust menu or questioning the clarity of provided security 
+guarantees. We took the opportunity to collaborate with Tor developers to make changes for the Tor 
+Browser and use the lessons learned to design our large-scale user study on testing Tor as a 
+censorship circumvention tool. 
 
 \subsection{Impact}
 \indent \indent Along with the Tor developers who came to observe the UX pilot, we filed 
@@ -139,7 +134,7 @@ with a source from the Library Freedom Project, which provides training on vario
 to libraries across the country. We now collaborate with her work on creating a user manual
 for the Tor Browser. 
 
-\subsection{Takeaways} 
+\subsection{Lessons Learned} 
 \indent \indent During the pilot study, we were attempting to test out a comprehensive set of 
 features for the Tor Browser. Our users had difficulties completing all the given tasks in the 
 time alloted for the experiment. Additionally, user fatigue was very evident, with users not 
@@ -446,6 +441,17 @@ Especially look into browser configuration work. }
 Include the recruitment process, the setup, what the exact 
 tasks were for participants, demographics, everything. 
 It all should have a home here.}
+
+%It is easy to overestimate user comprehension and therefore be 
+%misguided for user behavior. During this process, we discovered why 
+%previous studies had not concentrated on a specific user 
+%demographic or focus on advanced features. 
+%Even though people download and install on a frequent basis, 
+%they do not know how to do it securely and are habituated into doing it in the 
+%insecure manner. Of course, this is because the average user's objective is not security. 
+%For instance, most of our participants thought the download source was a legitimate site because
+%of the look and feel of the site and none our our participants thought to verify the download, 
+%even though there were clear instructions to do so on the download page.
 
 \subsection{Motivation}
 {\color {red} Talk about why we did what we did, and what the end goal 
