@@ -124,7 +124,7 @@ is the primary means through which users access the Tor network.
 It aims to make powerful anonymity and circumvention technology
 accessible even to nontechnical users.
 It has not undergone a formal usability assessment since
-its user interface was overhauled in its version~3.5 release in December 2013.
+its user interface was overhauled in December 2013.
 A central component of its user configuration interface
 is a panel to select bridges and pluggable transports
 for censorship circumvention.
@@ -149,34 +149,36 @@ whether their connection requires a proxy to access the Internet, the IP address
 and which pluggable transports are functional in their country. 
 
 \section{A Pilot Tor Usability Study} 
-\indent \indent We ran a pilot Tor usability study to test the usability of Tor as an anonymity tool,
-targeting a specific demographic of users known to use Tor (journalists who have reported in other
-countries) and aiming to identify how well they could understand Tor's non-typical behaviors and 
-navigate advanced settings. For the full details of this pilot experiment, we refer you to Appendix~\ref{sec:pilot}.  
+\indent \indent We ran a pilot study to test the usability of Tor as an anonymity tool,
+targeting a demographic of users who may have reason to use Tor, namely, journalists who have reported in other
+countries. We sought to identify how well they could understand Tor's non-typical behaviors and 
+navigate advanced settings. For the full details of this pilot experiment, see Appendix~\ref{sec:pilot}.  
 
-During this pilot, the users were struggling with confusing bugs, such as flash errors which
-say ``Firefox'' rather than ``Tor,'' disappearing buttons on the configuration window, and errors when
-launching Tor from the download dialog rather than from their applications folder. This resulted in our 
-participants spending most of their time on the download and install tasks, rather than 
-our original task for navigating a robust menu or questioning the clarity of provided security 
-guarantees. We took the opportunity to collaborate with Tor developers to make changes for the Tor 
-Browser and use the lessons learned to design our large-scale user study on testing Tor as a 
+During the pilot, users struggled with confusing bugs, such as a few error messages that
+said ``Firefox'' rather than ``Tor Browser,'' disappearing buttons on the configuration window, and errors when
+running the program from the download archive without installing it.
+This resulted in our
+participants spending most of their time on the download and install tasks, and not
+what we considered the main tasks of browsing and
+questioning the clarity of provided security 
+guarantees. We took the opportunity to collaborate with Tor developers to make changes in the
+browser and use the lessons learned to design our large-scale user study on testing Tor as a 
 censorship circumvention tool. 
 
 \subsection{Impact}
-\indent \indent Along with the Tor developers who came to observe the UX pilot, we filed 
+\indent \indent Along with the Tor developers who came to observe the usability pilot, we filed 
 a total of sixteen bug tickets to Tor. At the time of  this writing, eight of the sixteen tickets 
 have already been resolved, and more will be resolved in the future.  The list of bug
 tickets filed can be found at \url{https://trac.torproject.org/projects/tor/query?keywords=~uxsprint2015}. 
 
-As of April, the changes resulting from our pilot study has been incorporated into the latest 
-version of Tor Browser, making Tor more usable for people to use. 
-The summary of the usability changes can be found at \url{https://blog.torproject.org/blog/tor-browser-45a4-released}. 
+As of April 2015, the usability improvements resulting from our pilot study has been incorporated into the shipping
+release of Tor Browser.
+A summary of changes can be found at \url{https://blog.torproject.org/blog/tor-browser-45a4-released}. 
 
-Through the publicity of this usability pilot study on the Tor weekly blogs, we were connected
-with a source from the Library Freedom Project, which provides training on various technologies 
-to libraries across the country. We now collaborate with her work on creating a user manual
-for the Tor Browser. 
+Through the publicity of the usability study on the Tor blog, we were connected
+with a source from the Library Freedom Project~\cite{libraryfreedomproject}, which provides training on various technologies 
+to libraries across the country. We now collaborate with her in working on creating a user manual
+for Tor Browser. 
 
 \subsection{Lessons Learned} 
 \indent \indent During the pilot study, we were attempting to test out a comprehensive set of 
@@ -189,11 +191,11 @@ various features on our own, we chose to focus on the Tor Browser connection con
 dialog because of its crucial role in censorship circumvention. 
 
 Although the data from the pilot study provided a lot of insight into what users thought processes
-are when completing various asks, transcribing audio recordings and syncing them to videos was
-required a lot of manual labor. Not only did this form of data collection and processing not scale 
+are when completing various asks, transcribing audio recordings and syncing them to videos
+required much manual work. Not only did this form of data collection and processing not scale 
 to larger numbers, we found that most users encountered similar thought processes and struggled
 with the same issues. Because of this, we aim to collect our future qualitative data in the form of 
-an open-ended survey question rather than using audio recordings. 
+an open-ended survey rather than through audio recordings. 
 
 \section{Experiment Design}
 
@@ -494,7 +496,7 @@ tradeoffs made to users, and informing why, not how, precautions are taken for s
 
 \appendix
 
-\section{UX sprint}
+\section{Pilot study}
 \label{sec:pilot}
 \indent \indent This pilot examined the usability of Tor as an anonymity tool
 with respect to journalists, a target demographic of users known to use Tor. 
@@ -532,7 +534,7 @@ the following Tor Browser--related tasks:
 \item Explain your best understanding of all the items in the toolbar
 \end{enumerate}
 
-We originally had another step after Step~1, ``Configure Tor.''
+We originally had an extra step after Step~1: ``Configure Tor.''
 We removed it after the first two participants
 when it became clear that the wording was confusing.
 The two main buttons in the configuration wizard are labeled
@@ -556,9 +558,9 @@ such as their age, gender, and education. Upon finishing the survey, participant
 ask any questions about the Tor Browser that they encountered during their walkthrough. 
 
 \subsection{Methodology} 
-\indent \indent We recruited five journalists from Berkeley by reaching out to journalist contacts.
+\indent \indent We recruited five journalists from the Berkeley area by reaching out to journalist contacts.
  We recruited five users with an average age of 28 ($\sigma = 13 $~years).  Out of  %?
-our five participants, 3 were female. 
+five participants, three were female. 
 
 We conducted the experiment on January 30-31st in Soda 
 Hall at the University of Berkeley, California. We used a Mac laptop and a 
@@ -568,7 +570,7 @@ we recorded video data of their computer screen and audio data to capture their 
 The average time to complete the given tasks, not including the cognitive
 walkthrough nor the exit survey, was 26 minutes ($\sigma = 7$~min). 
 
-This pilot was held in conjunction with the first Tor UX sprint. With IRB approval, Tor developers
+This pilot was held in conjunction with the first Tor UX Sprint. With IRB approval, Tor developers
 observed the screens of our participants, which was set to broadcast to a separate  
 room during the experiment. Audio of the cognitive walkthrough was not broadcast for privacy
 considerations as voice is considered an identifying characteristic.
