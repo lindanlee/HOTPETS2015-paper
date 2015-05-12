@@ -36,16 +36,16 @@ Internet censorship circumvention.
 We describe an experiment to assess the usability of Tor Browser,
 a web browser with a bundled Tor proxy,
 for the purpose of circumvention.
-We focus our analysis on the browser's connection configuration dialog,
-which enables circumvention even under stringent censors,
-when used correctly.
-The experiment is aimed at evaluating whether, and how easily users can circumvent censorship using Tor Browser,
+We focus our analysis on the browser's connection configuration dialog, which,
+when used correctly,
+enables circumvention under many of the world's most stringent censors.
+The experiment is aimed at evaluating whether, and how easily users can circumvent censorship using Tor Browser
 under several censorship environments.
 We present the design of the experiment,
 which will involve hundreds of users completing seven browsing tasks in three different adversarial settings.
 We describe the results of a smaller-scale pilot study,
 the lessons we learned from it,
-and how it guided our future experimental ambitions.
+and how it guided the current design.
 The experiment we describe is scheduled to run in August 2015.
 \end{abstract}
 
@@ -53,24 +53,25 @@ The experiment we describe is scheduled to run in August 2015.
 
 \indent \indent We aim to improve user security by evaluating
 and improving the usability of security software.
-Both ``usability'' and ``security'' encompass many topics;
+The topics of usability and security encompass many ideas;
 therefore we limit our scope and focus on
-an important and timely use case:
-user configuration of software to evade Internet censorship.
+a timely use case:
+end-user configuration of software to evade Internet censorship.
 In this report, we detail the design of a usability-focused user experiment,
 which we hope will be a benchmark for such studies
 and guide their development in the future.
 
-We hold that usability must be regarded as a security property.
-It should be part of the design of security software.
+We hold that usability is a security property.
+Usability considerations should be part of the design of security software.
 Usable software not only decreases the risk of making mistakes
-with dangerous security consequences,
-but also provides a bridge over which users can
-transition from substitutes that are less safe.
+with potentially serious security consequences,
+but also provides users with a realistic alternative to
+substitute programs that are nice to use but less safe.
 
 The heart of our investigation will be a large-scale user study
 that measures how effectively users are able to complete
 basic web browsing tasks in the presence of a censor.
+The topic of this paper is the design of the study.
 We will place users in a controlled network environment
 that simulates the kind of censorship conditions that many
 users around the world face daily.
@@ -101,18 +102,18 @@ Our goal is the development of an experiment
 to test the usability of such tools.
 We focus on one particular system,
 Tor Browser, which bundles a variety of circumvention
-tools designed for different use cases.
+tools that are designed to evade different kinds of censors.
 
 \subsection{Tor} 
 
-\indent \indent The Tor Project, known for its anonymity network~\cite{tor-design},
+\indent \indent The Tor Project, best known for its anonymity network~\cite{tor-design},
 has in recent years become an important player in the world of
 censorship circumvention.
 In its early days, people used Tor to evade censorship,
 and in response censors began to block Tor itself.
 In response, work began on various anti-censorship technologies
-now known as ``pluggable transports''~\cite{pluggable-transports}.
-Currently there are over 15,000 users accessing the Tor network
+now known as ``bridges'' and ``pluggable transports''~\cite{pluggable-transports}.
+As of May 2015, there are over 15,000 users accessing the Tor network
 at any given time using one of these
 anti-censorship technologies~\cite{userstats-bridge-country}.
 
@@ -122,25 +123,29 @@ with a built-in Tor proxy and pluggable transports,
 is the primary means through which users access the Tor network.
 It aims to make powerful anonymity and circumvention technology
 accessible even to nontechnical users.
-Its user interface was greatly overhauled in its version~3.5 release,
-and since then it has not had a comprehensive usability evaluation.
+It has not undergone a formal usability assessment since
+its user interface was overhauled in its version~3.5 release in December 2013.
+A central component of its user configuration interface
+is a panel to select bridges and pluggable transports
+for censorship circumvention.
+This selection interface is the focus of our study.
 
 \subsection{What is Required of Users}
-\indent \indent For users to circumvent censorship in their resident countries, they will need to 
-configure Tor to set up a proxy, bridge, or both. The requirement of the user will vary on their censorship
-environment, specifically, if they need to conceal the fact that they are using Tor or if Tor entry nodes 
-have been blocked by the government. There is a configuration wizard to help guide users through setting up their connection, but they require the user to provide IP addresses of proxies or bridges to use.
+\indent \indent In order to circumvent censorship in their resident countries, users need to 
+configure Tor Browser to use a bridge or pluggable transport. This requirement of the user will vary depending on their censorship
+environment; specifically, on whether they need to conceal the fact that they are using Tor or if Tor entry nodes 
+have been blocked by the government. There is a configuration wizard to help guide users through setting up their connection, but they require the user to provide the IP addresses of proxies or bridges to use.
 
 The end user generally does not care about the details of the 
 censorship environment, and how the censorship is implemented; rather, they care about how to get
 to the website of their choice. In the wild, users may choose to get the required information in a variety 
 of ways, including reading online manuals on how to configure Tor, finding out information through word of mouth, 
-or figuring out correct configurations themselves by trial and error.  We cannot accurately simulate the effects
+or figuring out correct configurations themselves by trial and error.  We cannot meaningfully simulate the effects
 of these localized effects during our experiment.
 
 However, we are testing the usability, and therefore comprehension and user-friendliness, of the Tor configuration 
-dialog, which will require users in the most strict censorship environments to navigate through three configuration windows and provide correct answers all along the process in order to configure the connection correctly. Knowledge
-required includes if their connection would require a proxy to access the Internet, the IP address of a bridge if required, 
+dialog, which requires users in the most strict censorship environments to navigate through three configuration windows and provide correct answers all along the process in order to configure the connection correctly. Users must know
+whether their connection requires a proxy to access the Internet, the IP address of a bridge if required, 
 and which pluggable transports are functional in their country. 
 
 \section{A Pilot Tor Usability Study} 
