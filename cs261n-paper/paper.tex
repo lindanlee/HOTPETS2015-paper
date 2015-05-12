@@ -573,13 +573,6 @@ considerations as voice is considered an identifying characteristic.
 \indent \indent This experiment uncovered a powerful vector for attack, an unlikely source
 of usability issues, and insight into how to better communicate to users so that they can be 
 empowered to use Tor Browser and its advanced settings. 
-Because of the limited size of the study, it's not possible to state with confidence what 
-fraction of users will encounter major usability obstacles. However, it was effective at discovering 
-and demonstrating issues that are likely to cause problems for many users. 
-People did have difficulty with installing Tor Browser (principally because of the Gatekeeper 
-code-signing feature on OS X), did not understand what many of the toolbar options meant, 
-and were confused by most Tor-specific behaviors. For specific problems 
-encountered by an individual user, we refer you to our resources online. 
 
 \subsubsection{How to Attack Users}
 During the task completion process, we observed that all our participants are likely 
@@ -604,10 +597,6 @@ so I am going to click this.''} \mbox{---P2}
 
 There was one participant who did not pick the first search result, but to save themselves
 time while completing the task: 
-\begin{quote}{\it
-``\ldots so I am going to type in `tor mac download'.
-And that gives me some suggestions. I pick the first one.''} \mbox{---P4}
-\end{quote}
 
 \begin{quote}{\it
 ``I am going to go to torproject.org\ldots\ I am seeing the second result is `Download Tor.'
@@ -619,8 +608,14 @@ upon searching through various search engines with a clear history, we found tha
  appears as the first search result. Defenses against SEO optimization would be prudent to employ. 
 
 \subsubsection{Fighting Mac's Security Features}
-The biggest usability struggle was the result of tensions between Mac's security feature 
-and Tor's usability, rather than a specific feature of the Tor Browser itself. 
+The biggest usability obstacle was the result of tensions between Mac's Gatekeeper 
+code-signing feature on OS X, which prevents users from opening unsigned code 
+downloaded from the Internet to execute on their machine unless overridden through
+managing system preferences. Surprisingly, the feature which impacted Tor's usability
+the most was the tension between a security precaution, and Tor's decision to self-sign
+their downloads, rather than a specific feature of the Tor Browser itself. We found that 
+encountering the Gatekeeper will cause frustration to most users, and may be enough 
+to stop our participants in the download process: 
 
 \begin{quote}{\it
 ``\/`The app has been modified\ldots', blah blah blah\ldots\  Oh, this is annoying. I would maybe normally stop now.''} \mbox{---P1}
@@ -631,10 +626,12 @@ and Tor's usability, rather than a specific feature of the Tor Browser itself.
 Grr! I express some frustration at this fact.''} \mbox{---P4}
 \end{quote}
 
+As a result, Tor has developed a step-by-step visual guide on the download page to 
+help Mac OS X users to bypassing the Gatekeeper during their download. 
+
 \subsubsection{On Visual Communication}
-Through observing our participants, 
-we believe visual elements into their user interface design may be the key to 
-communicating with users.
+Our participants did not read much of the text provided on the download page or elsewhere during 
+the experiment. Critical actions were predominantly guided by visual cues:
 
 \begin{quote}{\it
 ``\ldots it looks like I should click there, because it is purple. No, not because it's purple, but\ldots\ 
@@ -647,15 +644,13 @@ so I'm going to click on that because it seems like the most obvious thing.
 There are a couple of other small words on the screen that I'm not going to look at, because this seems like the most obvious thing to do.''} \mbox{---P3}
 \end{quote}
 
-\begin{quote}{\it
-``Don't open documents downloaded through Tor\ldots\ That doesn't make sense to me.
-But I'll just pay attention because it's in capitals and it's like they're yelling at me.''} \mbox{---P1}
-\end{quote}
+Prudently and selectively incorporating visual elements into user interface design may be the key to 
+communicating with users and guiding correct user behaviors.
 
 \subsubsection{User Comprehension} 
+
 Most of our participants did not have the expertise to understand 
-the advanced setting for Tor Browser, and were wary to user it, but explaining why an option 
-tis available to the user may increase comprehension and tailored use.
+the advanced settings for the Tor Browser: 
 
 \begin{quote}{\it
 ``Yeah, and like the settings of your Tor Browser, I guess.''} \mbox{---P1}
@@ -666,6 +661,9 @@ tis available to the user may increase comprehension and tailored use.
 usually it's out of my understanding.''} \mbox{---P5}
 \end{quote}
 
+There was one participant who communicated a correct and thorough understanding of the 
+new identity feature: 
+
 \begin{quote}{\it
 ``So yeah, there was an onion. Small green onion. And yeah, I guess, it's new identity.
 So I'm guessing it's the same thing as with Google, when you open a page and you don't 
@@ -673,7 +671,21 @@ want the history to show up or something. And then you can, it's like you're dis
 from your Gmail account and everything, you can type that as a different user.''} \mbox{---P3} 
 \end{quote}
 
+Notice that this user explained what the feature can do for him, rather than how the 
+feature works. For the end user, the reason why a security feature is employed is what 
+makes a feature valuable and thus motivates them to use the feature. Communicating why a 
+feature is present may be more effective for increasing use of advanced features 
+than communicating the technical details of how a feature works. 
+
 \subsection{Resources}
+
+\indent \indent Because of the limited size of the study, it's not possible to state with confidence what 
+fraction of users will encounter major usability obstacles. However, it was effective at discovering 
+and demonstrating issues that are likely to cause problems for many users. 
+People did have difficulty with installing Tor Browser (principally because of the Gatekeeper 
+code-signing feature on OS X), did not understand what many of the toolbar options meant, 
+and were confused by most Tor-specific behaviors. For specific problems 
+encountered by an individual user, we refer you to our resources online. 
 
 \begin{figure}
 \includegraphics[width=\linewidth]{walkthrough.png}
@@ -698,7 +710,7 @@ the summary, results, and resulting browser changes are below:
 \item \url{https://blog.torproject.org/blog/ux-sprint-2015-wrapup}
 \end{itemize}
 
-\noindent If you would like to observe individual participants' cognitive walkthroughs, 
+\indent \indent If you would like to observe individual participants' cognitive walkthroughs, 
 we transcribed the audio files from our experiment
 and synced them to the screen capture we took during the duration of the experiment.
 Figure~\ref{walkthrough} shows a screenshot of one of the videos.
